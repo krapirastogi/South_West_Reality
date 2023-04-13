@@ -5,7 +5,53 @@
 }
 
 .navbar {
-  background-color: #009e00;
+  background-color: rgba(0, 158, 0, 0.89);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+body{
+  background-color: #533E85;
+}
+.body_1
+{
+  margin:2rem;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+
+}
+.body_1_details{
+  width:50%;
+  margin:2rem;
+}
+.body_2
+{
+  margin:2rem;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+.body_2_details
+{
+  margin:2rem;
+  width:50%;
+}
+h1{
+  font-size:4rem;
+}
+p{
+  font-size: 1rem;
+}
+img{
+  border-radius: 10px;
+
 }
 
 .wrapper {

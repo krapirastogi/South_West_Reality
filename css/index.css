@@ -163,12 +163,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  gap:10px;
+  margin: 2rem;
 }
 .car {
-  width: 380px;
-  height: 250px;
+  width:33%;
+  
   border-radius: 15px;
   margin: 7px;
   padding: 20px 30px;

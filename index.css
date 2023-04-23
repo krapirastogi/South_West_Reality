@@ -158,7 +158,7 @@
 }
 .car {
   width: 380px;
-  height: 250px;
+  height: 320px;
   border-radius: 15px;
   margin: 7px;
   padding: 20px 30px;
@@ -179,31 +179,33 @@
   border: 2px solid #f2f2f2;
   border-radius: 50%;
   position: absolute;
-  top: -40px;
-  left: 20px;
+  top: -50px;
+  left: 25px;
+}
+.car .test{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .car p {
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 35px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
   line-height: 1.2rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .car h2 {
-  font-weight: 700;
-  font-size: 1.6rem;
+  font-weight: 800;
+  font-size: 1.3rem;
   margin-bottom: 4px;
 }
 .car h4 {
   color: #333;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
 }
 .car i {
-  font-size: 60px;
-  position: absolute;
-  bottom: 20px;
-  right: 25px;
+  font-size: 55px;
   color: #b2bec3;
 }
 @media (max-width: 768px) {
@@ -235,9 +237,12 @@
 
 }
 /* footer section  */
+.foot{
+  margin-top: 2rem;
+}
 .sp {
   letter-spacing: 0.1rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 .ho p a:hover {
   cursor: pointer;
@@ -386,11 +391,11 @@
 
 
 .swiper-navBtn{
-  color: #6E93f7;
+  color: #28a745;
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-  color: #4070F4;
+  color: #28a745;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after{
@@ -403,14 +408,7 @@
 .swiper-button-prev{
   left: 0;
 }
-.swiper-pagination-bullet{
-  background-color: #6E93f7;
-opacity: 1;
-}
-.swiper-pagination-bullet-active{
-  background-color: #4070F4;
 
-}
 
 
 @media (max-width: 768px) {

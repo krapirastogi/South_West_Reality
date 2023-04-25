@@ -41,17 +41,18 @@ body{
 
 }
 .card-content{
-
+  margin-top:10vh;
   display:flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 
 }
 .wrapper {
-  top:17vh;
+  /* top:17vh; */
   width: 50vh;
-  height: 35vw;
+  height:60vh;
   background: white;
   margin: auto;
   position: relative;
@@ -107,11 +108,12 @@ body{
   float: right;
   width: calc(30% - 2px);
   height: 100%;
+  
   background: #f1f1f1;
   transition: background 0.5s;
   border-left: solid thin rgba(0, 0, 0, 0.1);
 }
-.wrapper .container .bottom .left .buy button {
+.wrapper .container .bottom .left .buy i {
   background-color: #533e85;
   font-size: 30px;
   font-weight: bold;
@@ -126,19 +128,7 @@ body{
   transform: translateY(5px);
   color: #00394b;
 }
-.wrapper .container .bottom .right {
-  width: 50%;
-  background: #a6cdde;
-  color: white;
-  float: right;
-  height: 200%;
-  overflow: hidden;
-}
-.wrapper .container .bottom .right .details {
-  padding: 20px;
-  float: right;
-  width: calc(70% - 40px);
-}
+
 .wrapper .container .bottom .right .done {
   width: calc(30% - 2px);
   float: left;
@@ -226,4 +216,32 @@ body{
 }
 .wrapper .inside .contents p {
   font-size: 13px;
+}
+.foot{
+  margin-top: 2rem;
+}
+.sp {
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+}
+.ho p a:hover {
+  cursor: pointer;
+}
+.ho p a i {
+  font-size: 1.2rem;
+}
+.contact p i {
+  font-size: 1.3rem;
+}
+
+.icon a:nth-child(1):hover {
+  background-color: #4267b2;
+}
+
+.icon a:nth-child(2):hover {
+  background-color: #0a66c2;
+}
+
+.icon a:nth-child(3):hover {
+  background-color: #e4405f;
 }

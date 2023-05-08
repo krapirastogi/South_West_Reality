@@ -11,6 +11,9 @@ var swiper = new Swiper(".slide-content", {
        clickable: true,
        dynamicBullets: true,
      },
+     autoplay: {
+      delay: 3000,
+    },
      navigation: {
        nextEl: ".swiper-button-next",
        prevEl: ".swiper-button-prev",
@@ -29,3 +32,21 @@ var swiper = new Swiper(".slide-content", {
      },
    });
  
+  var swiper = new Swiper('.js-testimonials-slider',{
+    grabCursor: 'true',
+    spaceBetween : 30,
+    // direction: 'vertical',
+    loop: true,
+    pagination: {
+         el: '.js-testimonials-pagination',
+         clickable : true
+       },
+       autoplay: {
+         delay: 4000,
+       },
+       breakpoints:{
+         767:{
+              slidesPerView: 2,
+         }
+       }
+    })

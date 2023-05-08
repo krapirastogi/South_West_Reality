@@ -25,6 +25,7 @@
 .nav-item .nav-link:hover {
   transform: scale(1.2);
   color: #533e85 !important;
+  transition: 0.5s ease;
 }
 .p-md-3 {
   padding: 0.4rem !important;
@@ -257,12 +258,15 @@
 
 .icon a:nth-child(1):hover {
   background-color: #4267b2;
+  transition: 0.5s ease;
 }
 
 .icon a:nth-child(2):hover {
   background-color: #0a66c2;
+  transition: 0.5s ease;
 }
 
 .icon a:nth-child(3):hover {
   background-color: #e4405f;
+  transition: 0.5s ease;
 }

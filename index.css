@@ -26,6 +26,7 @@
 .nav-item .nav-link:hover {
   transform: scale(1.2);
   color: #533e85 !important;
+  transition: 0.5s ease;
 }
 .p-md-3 {
   padding: 0.4rem !important;
@@ -126,144 +127,77 @@
 }
 
 /* Testimonial Css  */
-.wrapper {
-  background-color: #533e85;
-  min-height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
-.wrapper h1 {
-  font-size: 40px;
-  font-weight: 500;
-  margin-top: 50px;
-  margin-bottom: 20px;
+
+.testi{
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
 }
-.wrapper h5 {
-  font-size: 20px;
-  font-weight: 300;
+.testimonials{
+  padding: 100px 0;
+}
+.section-header{
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
-.cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1200px;
-  margin: 0 auto;
+.section-header .title{
+  font-size: 2rem ;
+font-weight: 700;
+text-transform: capitalize;
+line-height: 1.2;
+color: hsl(0,0%, 100%);
 }
-.car {
-  width: 380px;
-  height: 320px;
-  border-radius: 15px;
-  margin: 7px;
-  padding: 20px 30px;
-  position: relative;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
+.section-header h5{
+  font-size: 1.3rem ;
+  font-weight: 600;
+  color: hsl(0,0%, 100%);
+
 }
-.car:hover {
-  transform: scale(1.02);
-  color: #333;
-  background-color: #fff;
-  z-index: 1000;
+.testomonials-item{
+  background-color:hsl(0,0%, 100%) ;
+  padding: 30px;
+ border-radius: 30px;
 }
-.car img {
-  height: 90px;
-  width: 90px;
-  border: 2px solid #f2f2f2;
+.testomonials-item img{
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  left: 25px;
+  margin-right: 20px;
+  vertical-align: middle;
 }
-.car .test{
+.testomonials-item .info{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.car p {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 1.5rem;
-  line-height: 1.2rem;
-  margin-bottom: 10px;
+.testomonials-item .info .name{
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: hsl(0,0%, 0%);
+  line-height: 1.2;
 }
-.car h2 {
-  font-weight: 800;
-  font-size: 1.3rem;
-  margin-bottom: 4px;
-}
-.car h4 {
-  color: #333;
-  font-weight: 700;
-  font-size: 15px;
-}
-.car i {
-  font-size: 55px;
-  color: #b2bec3;
-}
-@media (max-width: 768px) {
-  .cards {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .wrapper h1 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  .car {
-    margin: 40px 0;
-  }
-  .wrapper{
-  margin-top: 4rem;
-  }
+.testomonials-item .info .job{
+  text-transform: capitalize;
+  color: hsl(0,0%, 40%);
 
 }
-@media (max-width: 376px) {
-  .card {
-    margin: 40px 0;
-  }
-  .wrapper h5 {
-    font-size: 17px;
-  } 
-
-}
-/* footer section  */
-.foot{
-  margin-top: 2rem;
-}
-.sp {
-  letter-spacing: 0.1rem;
-  font-size: 1.4rem;
-}
-.ho p a:hover {
-  cursor: pointer;
-}
-.ho p a i {
-  font-size: 1.2rem;
-}
-.contact p i {
-  font-size: 1.3rem;
+.testomonials-item p{
+  margin-top: 20px;
+  color: hsl(0,0%, 30%);
 }
 
-.icon a:nth-child(1):hover {
-  background-color: #4267b2;
+.testimonials .swiper-pagination-bullet{
+  height: 12px;
+  width: 12px;
+  background-color: hsl(0,0%, 100%);
 }
-
-.icon a:nth-child(2):hover {
-  background-color: #0a66c2;
-}
-
-.icon a:nth-child(3):hover {
-  background-color: #e4405f;
+.testomonials-item p i{
+  font-size: 2rem;
 }
 
 
@@ -431,4 +365,33 @@
   }
   .section-title h1{
     font-size: 2rem;}
+}
+/* footer section  */
+.sp {
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+}
+.ho p a:hover {
+  cursor: pointer;
+}
+.ho p a i {
+  font-size: 1.2rem;
+}
+.contact p i {
+  font-size: 1.3rem;
+}
+
+.icon a:nth-child(1):hover {
+  background-color: #4267b2;
+  transition: 0.5s ease;
+}
+
+.icon a:nth-child(2):hover {
+  background-color: #0a66c2;
+  transition: 0.5s ease;
+}
+
+.icon a:nth-child(3):hover {
+  background-color: #e4405f;
+  transition: 0.5s ease;
 }

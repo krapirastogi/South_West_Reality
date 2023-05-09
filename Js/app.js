@@ -50,3 +50,19 @@ var swiper = new Swiper(".slide-content", {
          }
        }
     })
+
+    var swiper = new Swiper('.js-cards-slider',{
+      // grabCursor: 'true',
+      spaceBetween : 30,
+      // direction: 'vertical',
+      loop: true,
+      
+         autoplay: {
+           delay: 3000,
+         },
+         breakpoints:{
+           767:{
+                slidesPerView: 1,
+           }
+         }
+      })

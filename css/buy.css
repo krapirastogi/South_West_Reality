@@ -94,8 +94,8 @@ section::after {
 
 .contain .card {
   position: relative;
-  width: 300px;
-  height: 400px;
+  width:400px;
+  height: 300px;
   background: rgba(255, 255, 255, 0.05);
   margin: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -118,8 +118,8 @@ section::after {
 
 .contain .card .content .imgBx {
   position: relative;
-  width: 250px;
-  height: 350px;
+  width: 350px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -170,7 +170,7 @@ section::after {
 
  
 }
-.contain .card .content .contentBx p{
+.contain .card .content .contentBx ul{
 opacity: 0;
 margin: 10px 0 0;
 padding: 5px;
@@ -180,7 +180,7 @@ text-align: justify;
 color: hsl(0,0%, 30%);
 /* padding: 10px; */
 }
-.contain .card .content:hover .contentBx p{
+.contain .card .content:hover .contentBx ul{
  opacity: 1;
 }
 /* footer */

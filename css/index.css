@@ -241,10 +241,14 @@
     font-size: 17px;
   }
 }
-/* footer section  */
+
+/* footer */
+.foot{
+  margin-top: 2rem;
+}
 .sp {
   letter-spacing: 0.1rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 .ho p a:hover {
   cursor: pointer;
@@ -272,4 +276,5 @@
 }
 .icon a:nth-child(4):hover {
   background-color: #07b81f;
-  transition: 0.5s ease;}
+  transition: 0.5s ease;
+}

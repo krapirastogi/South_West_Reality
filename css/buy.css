@@ -25,6 +25,7 @@
 .nav-item .nav-link:hover {
   transform: scale(1.2);
   color: #533e85 !important;
+  transition: 0.5s ease;
 }
 .p-md-3 {
   padding: 0.4rem !important;
@@ -40,183 +41,147 @@ body{
     background-color: #533e85;
 
 }
-.card-content{
-  margin-top:10vh;
-  display:flex;
-  flex-direction: row;
-  align-items: center;
+
+
+/* body {
+  display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-
-}
-.wrapper {
-  /* top:17vh; */
-  width: 50vh;
-  height:60vh;
-  background: white;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0;
-  transform: scale(0.75);
-  transition: box-shadow 0.5s, transform 0.5s;
-}
-.wrapper:hover {
-  transform: scale(0.80);
-  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
-}
-.wrapper .container {
-  width: 100%;
-  height: 100%;
-}
-.wrapper .container .top {
-  height: 80%;
-  width: 100%;
-  background: url(https://st.hzcdn.com/simgs/5e51a3710c514c53_4-8676/asian-living-room.jpg) no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-}
-.wrapper .container .bottom {
-  width: 200%;
-  height: 20%;
-  transition: transform 0.5s;
-}
-.wrapper .container .bottom.clicked {
-  transform: translateX(-50%);
-}
-.wrapper .container .bottom h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper .container .bottom .left {
-  height: 100%;
-  width: 50%;
-  background: #f4f4f4;
-  position: relative;
-  float: left;
-}
-.wrapper .container .bottom .left .details {
-  padding: 20px;
-  float: left;
-  width: calc(70% - 40px);
-}
-/* .wrapper .container .bottom .left .buy {
-  float: right;
-  width: calc(30% - 2px);
-  height: 100%;
-  
-  background: #f1f1f1;
-  transition: background 0.5s;
-  border-left: solid thin rgba(0, 0, 0, 0.1);
-}
-.wrapper .container .bottom .left .buy i {
   background-color: #533e85;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 30px;
-  color: white;
-  transition: transform 0.5s;
-}
-.wrapper .container .bottom .left .buy:hover {
-  background: #a6cdde;
-}
-.wrapper .container .bottom .left .buy:hover i {
-  transform: translateY(5px);
-  color: #00394b;
+  min-height: 100vh;
 } */
-
-/* .wrapper .container .bottom .right .done {
-  width: calc(30% - 2px);
-  float: left;
-  transition: transform 0.5s;
-  border-right: solid thin rgba(255, 255, 255, 0.3);
-  height: 50%;
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #533e85;
+  min-height: 100vh;
+  margin-top: 10px;
 }
-.wrapper .container .bottom .right .done i {
-  font-size: 30px;
-  padding: 30px;
-  color: white;
- } */
-.wrapper .container .bottom .right .remove {
-  width: calc(30% - 1px);
-  clear: both;
-  border-right: solid thin rgba(255, 255, 255, 0.3);
-  height: 50%;
-  background: #bc3b59;
-  transition: transform 0.5s, background 0.5s;
-}
-/* .wrapper .container .bottom .right .remove:hover {
-  background: #9b2847;
-} 
-.wrapper .container .bottom .right .remove:hover i {
-  transform: translateY(5px);
-}
-.wrapper .container .bottom .right .remove i {
-  transition: transform 0.5s;
-  font-size: 30px;
-  padding: 30px;
-  color: white;
-} */
-.wrapper .container .bottom .right:hover .remove, .wrapper .container .bottom .right:hover .done {
-  transform: translateY(-100%);
-}
-.wrapper .inside {
-  z-index: 9;
-  background: #92879b;
-  width: 140px;
-  height: 140px;
+section::before {
+  content: "";
   position: absolute;
-  top: -70px;
-  right: -70px;
-  border-radius: 0px 0px 200px 200px;
-  transition: all 0.5s, border-radius 2s, top 1s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#da22ff, #9733ee);
+  clip-path: circle(30% at right 70%);
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#e55d87, #5fc3e4);
+  clip-path: circle(20% at 10% 10%);
+}
+
+.contain {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.contain .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.contain .card .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+
+.contain .card .content .imgBx {
+  position: relative;
+  width: 250px;
+  height: 350px;
   overflow: hidden;
 }
-.wrapper .inside .icon {
+
+.contain .card .content .imgBx img {
   position: absolute;
-  right: 85px;
-  top: 85px;
-  color: white;
-  opacity: 1;
-}
-.wrapper .inside:hover {
-  width: 100%;
-  right: 0;
   top: 0;
-  border-radius: 0;
-  height: 80%;
-}
-.wrapper .inside:hover .icon {
-  opacity: 0;
-  right: 15px;
-  top: 15px;
-}
-.wrapper .inside:hover .contents {
-  opacity: 1;
-  color:#fff;
-  transform: scale(1);
-  transform: translateY(0);
-}
-.wrapper .inside .contents {
-  padding: 5%;
-  opacity: 0;
-  transform: scale(0.5);
-  transform: translateY(-200%);
-  transition: opacity 0.2s, transform 0.8s;
-}
-.wrapper .inside .contents table {
-  text-align: left;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
 }
-.wrapper .inside .contents h1, .wrapper .inside .contents p, .wrapper .inside .contents table {
-  color: white;
+.contain .card .content:hover .imgBx img {
+  opacity: 0;
 }
-.wrapper .inside .contents p {
-  font-size: 13px;
+.contain .card .content .contentBx {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  height: 35px;
+  background-color: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-top: 20px;
+  z-index: 999;
+}
+
+.contain .card .content:hover .imgBx img {
+  opacity: 0;
+}
+.contain .card .content:hover .contentBx {
+  position: absolute;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.contain .card .content .contentBx h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 5px;
+
+ 
+}
+.contain .card .content .contentBx p{
+opacity: 0;
+margin: 10px 0 0;
+padding: 5px;
+line-height: 1.2em;
+transition: 0.5s;
+text-align: justify;
+color: hsl(0,0%, 30%);
+/* padding: 10px; */
+}
+.contain .card .content:hover .contentBx p{
+ opacity: 1;
 }
 /* footer */
 .foot{

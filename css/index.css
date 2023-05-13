@@ -224,8 +224,7 @@ color: hsl(0,0%, 100%);
 }
 
 .slide-container{
-max-width: 1120px;
-/* width: 100%; */
+  max-width: 1120px;
   width: 40%;
   padding: 40px 0;
   margin: auto;

@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Maker Tower",
+    "locality": "Cuffe Parade, South Mumbai",
+    "bhk": "3BHK",
+    "flatNo": "Middle Floor",
+    "carpetArea": "2200sqft",
+    "parking": "free parking",
+    "quotation": "20CR (negotiable)",
+    "client": "Sunny",
+    "clientNumber": "8291997847",
+    "images": [
+      "./assets/sell_2/sell_2-1.jpg",
+      "./assets/sell_2/sell_2-2.jpg",
+      "./assets/sell_2/sell_2-3.jpg",
+      "./assets/sell_2/sell_2-4.jpg",
+      "./assets/sell_2/sell_2-5.jpg",
+      "./assets/sell_2/sell_2-6.jpg",
+      "./assets/sell_2/sell_2-7.jpg",
+      "./assets/sell_2/sell_2-8.jpg",
+      "./assets/sell_2/sell_2-9.jpg",
+      "./assets/sell_2/sell_2-10.jpg",
+      "./assets/sell_2/sell_2-11.jpg",
+      "./assets/sell_2/sell_2-12.JPG",
+      "./assets/sell_2/sell_2-13.JPG",
+      "./assets/sell_2/sell_2-14.jpg",
+      "./assets/sell_2/sell_2-15.jpg",
+      "./assets/sell_2/sell_2-16.jpg",
+      "./assets/sell_2/sell_2-17.jpg",
+      "./assets/sell_2/sell_2-18.jpg",
+      "./assets/sell_2/sell_2-19.jpg",
+      "./assets/sell_2/sell_2-20.jpg",
+      "./assets/sell_2/sell_2-21.jpg",
+      "./assets/sell_2/sell_2-22.jpg",
+      "./assets/sell_2/sell_2-23.jpg",
+      "./assets/sell_2/sell_2-24.jpg",
+      "./assets/sell_2/sell_2-25.jpg",
+      "./assets/sell_2/sell_2-26.jpg",
+      "./assets/sell_2/sell_2-27.jpg",
+      "./assets/sell_2/sell_2-28.jpg",
+      "./assets/sell_2/sell_2-29.jpg",
+      "./assets/sell_2/sell_2-30.jpg"
+    ]
+  },
+  {
+    "title": "Shankeshwar Apartments",
+    "locality": "Ghatkopar West",
+    "bhk": "4BHK",
+    "flatNo": "Middle Floor",
+    "carpetArea": "1530sqft",
+    "parking": "free parking",
+    "quotation": "4CR (negotiable)",
+    "client": "Sunny",
+    "clientNumber": "8291997847",
+    "images": [
+      "./assets/sell_1/sell_1-0.jpg",
+      "./assets/sell_1/sell_1-1.jpg",
+      "./assets/sell_1/sell_1-2.jpg",
+      "./assets/sell_1/sell_1-3.jpg",
+      "./assets/sell_1/sell_1-4.jpg",
+      "./assets/sell_1/sell_1-5.jpg",
+      "./assets/sell_1/sell_1-6.jpg",
+      "./assets/sell_1/sell_1-7.jpg",
+      "./assets/sell_1/sell_1-8.jpg"
+    ]
+  }
+
+]

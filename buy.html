@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,700,900"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
     <!-- <link rel="stylesheet" href="../index.css"> -->
     <link
       rel="stylesheet"
@@ -84,7 +88,7 @@
   </section>
 
   <!-- Property section  -->
-  <section class="cards">
+  <!-- <section class="cards">
     <div class="contain">
          <div class="card">
               <div class="content">
@@ -196,9 +200,9 @@
                     </ul>
                        
                    </div>
-              </div>
+              </div> -->
 
-         </div>
+         <!-- </div>
          <div class="card">
               <div class="content">
                    <div class="imgBx swiper js-cards-slider">
@@ -246,9 +250,11 @@
                           <li>Client Number: 8291997847</li>
                         </ul>
                    </div>
+              
+                   
               </div>
 
-         </div>
+         </div> -->
          <!-- <div class="card">
               <div class="content">
                    <div class="imgBx swiper js-cards-slider">
@@ -271,9 +277,58 @@
               </div>
 
          </div> -->
-    </div>
+    <!-- </div>
 
+</section> -->
+<section class="cards">
+  <div class="contain" id="cardsContainer">
+    
+  </div>
+
+  <script>
+    // Fetch JSON data
+    fetch('buy.json')
+      .then(response => response.json())
+      .then(data => {
+        const cardsContainer = document.getElementById('cardsContainer');
+
+        // Loop through the data and generate cards
+        data.forEach(card => {
+          const cardElement = document.createElement('div');
+          cardElement.classList.add('card');
+
+          // Generate card content
+          const content = `
+            <div class="content">
+              <div class="imgBx swiper js-cards-slider">
+                <div class="swiper-wrapper">
+                  ${card.images.map(image => `<div class="swiper-slide"><img src="${image}" alt="Card Image"></div>`).join('')}
+                </div>
+              </div>
+              <div class="contentBx">
+                <h2>${card.title}</h2>
+                <ul>
+                  <li>Locality: ${card.locality}</li>
+                  <li>BHK: ${card.bhk}</li>
+                  <li>Flat No: ${card.flatNo}</li>
+                  <li>Carpet Area: ${card.carpetArea}</li>
+                  <li>Parking: ${card.parking}</li>
+                  <li>Quotation: ${card.quotation}</li>
+                  <li>Client: ${card.client}</li>
+                  <li>Client Number: ${card.clientNumber}</li>
+                </ul>
+              </div>
+            </div>
+          `;
+
+          cardElement.innerHTML = content;
+          cardsContainer.appendChild(cardElement);
+        });
+      })
+      .catch(error => console.error('Error fetching JSON:', error));
+  </script>
 </section>
+
 
 
   <!-- Footer Part  -->

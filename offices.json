@@ -1,0 +1,22 @@
+[
+  {
+  "title": "Maker Tower E",
+  "locality": "Cuffe Parade ",
+  "bhk": "-",
+  "flatNo": "4th Floor",
+  "carpetArea": "4550,5361 built up",
+  "parking": "-",
+  "quotation": "20CR",
+  "client": "Sunny",
+  "clientNumber": "8291997847",
+  "images": [
+    "./assets/office_1/office-1_1.jpg",
+    "./assets/office_1/office-1_2.jpg",
+    "./assets/office_1/office-1_3.jpg",
+    "./assets/office_1/office-1_4.jpg",
+    "./assets/office_1/office-1_5.jpg",
+    "./assets/office_1/office-1_6.jpg"
+   
+  ]
+}
+]

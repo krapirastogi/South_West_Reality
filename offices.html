@@ -85,77 +85,54 @@
 
   <!-- Property section  -->
   <section class="cards">
-    <div class="contain">
-         <div class="card">
-              <div class="content">
-                   <div class="imgBx swiper js-cards-slider">
-                        <div class="swiper-wrapper">
-                             <div class="swiper-slide">
-                        <img src="https://st.hzcdn.com/simgs/5e51a3710c514c53_4-8676/asian-living-room.jpg">
-                   </div>
-                             <div class="swiper-slide">
-                        <img src="./assets/istockphoto-1007763808-170667a.jpg">
-                   </div>
-                             <div class="swiper-slide">
-                        <img src="./assets/istockphoto-1157741177-170667a.jpg">
-                   </div>
-                   </div>
-                   </div>
-                   <div class="contentBx">
-                        <h2>XYZ Apartments</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt recusandae ducimus iure consequuntur reiciendis deserunt nihil explicabo voluptates eaque modi, debitis itaque odio qui neque perspiciatis sit. Voluptatum beatae consequuntur quia veritatis molestias. Enim quam quidem, in deserunt minus sapiente esse corporis doloremque voluptatem, dolorum et accusamus voluptatum exercitationem tempore.</p>
-                   </div>
-              </div>
-
-         </div>
-         <div class="card">
-              <div class="content">
-                   <div class="imgBx swiper js-cards-slider">
-                        <div class="swiper-wrapper">
-                             <div class="swiper-slide">
-                        <img src="https://st.hzcdn.com/simgs/5e51a3710c514c53_4-8676/asian-living-room.jpg">
-                   </div>
-                             <div class="swiper-slide">
-                        <img src="./assets/istockphoto-1007763808-170667a.jpg">
-                   </div>
-                             <div class="swiper-slide">
-                        <img src="./assets/istockphoto-1157741177-170667a.jpg">
-                   </div>
-                   </div>
-                   </div>
-                   <div class="contentBx">
-                        <h2>XYZ Apartments</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt recusandae ducimus iure consequuntur reiciendis deserunt nihil explicabo voluptates eaque modi, debitis itaque odio qui neque perspiciatis sit. Voluptatum beatae consequuntur quia veritatis molestias. Enim quam quidem, in deserunt minus sapiente esse corporis doloremque voluptatem, dolorum et accusamus voluptatum exercitationem tempore.</p>
-                   </div>
-              </div>
-
-         </div>
-         <div class="card">
-              <div class="content">
-                   <div class="imgBx swiper js-cards-slider">
-                        <div class="swiper-wrapper">
-                             <div class="swiper-slide">
-                        <img src="https://st.hzcdn.com/simgs/5e51a3710c514c53_4-8676/asian-living-room.jpg">
-                   </div>
-                             <div class="swiper-slide">
-                        <img src="./assets/istockphoto-1007763808-170667a.jpg">
-                   </div>
-                             <div class="swiper-slide">
-                        <img src="./assets/istockphoto-1157741177-170667a.jpg">
-                   </div>
-                   </div>
-                   </div>
-                   <div class="contentBx">
-                        <h2>XYZ Apartments</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt recusandae ducimus iure consequuntur reiciendis deserunt nihil explicabo voluptates eaque modi, debitis itaque odio qui neque perspiciatis sit. Voluptatum beatae consequuntur quia veritatis molestias. Enim quam quidem, in deserunt minus sapiente esse corporis doloremque voluptatem, dolorum et accusamus voluptatum exercitationem tempore.</p>
-                   </div>
-              </div>
-
-         </div>
+    <div class="contain" id="cardsContainer">
+      
     </div>
-
-</section>
-
+  
+    <script>
+      // Fetch JSON data
+      fetch('offices.json')
+        .then(response => response.json())
+        .then(data => {
+          const cardsContainer = document.getElementById('cardsContainer');
+  
+          // Loop through the data and generate cards
+          data.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.classList.add('card');
+  
+            // Generate card content
+            const content = `
+              <div class="content">
+                <div class="imgBx swiper js-cards-slider">
+                  <div class="swiper-wrapper">
+                    ${card.images.map(image => `<div class="swiper-slide"><img src="${image}" alt="Card Image"></div>`).join('')}
+                  </div>
+                </div>
+                <div class="contentBx">
+                  <h2>${card.title}</h2>
+                  <ul>
+                    <li>Locality: ${card.locality}</li>
+                    <li>BHK: ${card.bhk}</li>
+                    <li>Flat No: ${card.flatNo}</li>
+                    <li>Carpet Area: ${card.carpetArea}</li>
+                    <li>Parking: ${card.parking}</li>
+                    <li>Quotation: ${card.quotation}</li>
+                    <li>Client: ${card.client}</li>
+                    <li>Client Number: ${card.clientNumber}</li>
+                  </ul>
+                </div>
+              </div>
+            `;
+  
+            cardElement.innerHTML = content;
+            cardsContainer.appendChild(cardElement);
+          });
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
+    </script>
+  </section>
+  
 
   <!-- Footer Part  -->
 
